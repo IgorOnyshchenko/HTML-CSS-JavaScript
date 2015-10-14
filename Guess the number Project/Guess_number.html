@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JavaScript Guessing Game</title>
+
+</head>
+
+<body>
+<script type="text/javascript" src = "js_guessing_game.js"></script>
+<p>Pick a number between 1 and 100.</p>
+<form  id="guessNumber">
+  <input align="top" type="text" name="guess" />
+  <input align="bottom" type="submit" name="submit" value="Submit Guess" onclick=verify() />
+  <input align="bottom" type="button" name="rstrt" value="New Game" onclick=restart() />
+</form>
+
+
+<p id="output1">Enter your guess what number I'm thinking about!</p>
+<p id="output2">Your current result:</p>
+<p id="output3">Your 5 last attempts:</p>
+
+
+<script> 
+document.getElementById('guessNumber').onsubmit = verify;
+</script>   
+
+	
+</body>
+
+</html>
